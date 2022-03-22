@@ -1,7 +1,13 @@
-function demanderAge(){
+function calculerIMC(poids, taille){
 
-    let age = prompt("Quel est votre age ?")
-    age = parseFloat(age);
-    alert ("Bientot vous aurez " + (age + 1) + " ans. ");
+    let tailleEnMettres = taille / 100; 
+    let tailleCalculee  = Math.pow(tailleEnMettres, 2);
+    let resultat        = poids / tailleCaluculee;
+    
+    return resultat;
+
 }
-demanderAge()
+let poids  = prompt("Quel est votre poids ? (en kg)");
+let taille = prompt("Quelle est votre taille (en cm)");
+
+alert(calculerIMC(poids, taille));
